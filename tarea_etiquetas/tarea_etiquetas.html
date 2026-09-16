@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        label {color: red; font-weight: bold;}
+    </style>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div>
+        <p>Formulario para enviar correo</p>
+        <form action="tarea_etiquetas.html" method="post">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="email">Correo electrónico:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4"></textarea><br><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <footer style="background: yellow;">
+        <h2>Pie de página</h2>
+        <p>&copy; 2026 Pico. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
