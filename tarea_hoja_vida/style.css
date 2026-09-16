@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+ margin: 0;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ background-color: #eef1f5;
+ color: #333;
+ line-height: 1.6;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.contacto {
+    position: fixed;
+    width: 260px;
+    padding: 30px 25px;
+    background-color: #1E2A56;
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.foto {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.foto img {
+    width: 180px;
+    height:180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.perfil-lateral {
+    margin-top: 30px;
+}
+
+.perfil-lateral h2 {
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #ffffff55;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.dato {
+    margin-bottom: 18px;
+}
+
+.dato strong {
+    display: block;
+    color: #aebcf0;
+    font-size: 14px;
+}
+
+.dato p {
+    margin: 2px 0;
+    font-size: 14px;
+    word-break: break-word;
+}
+
+.informacion {
+ width: calc(100%-290px);
+ margin-left: 290px;
+ background-color: white;
+ padding: 45px;
+ border-radius: 12px;
+ box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.encabezado {
+    margin-bottom: 35px;
+    border-bottom: 3px solid #1e2a56;
+    padding-bottom: 25px;
+}
+
+.encabezado h1 {
+    margin: 0;
+    color: #1e2a56;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.profesion {
+    margin: 5px 0 0;
+    color: #777;
+    font-size: 19px;
+}
+
+.seccion {
+    margin-bottom: 35px;
+}
+
+.seccion h2 {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    color: #1e2a56;
+    font-size: 21px;
+    letter-spacing: 1px;
+}
+
+.seccion h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 5px;
+    height: 22px;
+    background-color: #1e2a56;
+    border-radius: 3px;
+}
+
+.seccion p {
+    font-size: 15px;
+    color: #555;
+}
+
+.item {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border-left: 2px solid #dce1ec;
+}
+
+.item h3 {
+    margin: 0;
+    color: #333;
+    font-size: 17px;
+}
+
+.subtitulo {
+    margin: 3px 0 !important;
+    color: #1e2a56 !important;
+    font-size: 14px !important;
+    font-weight: 600;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #1E2A56;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .contenedor {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    .contacto {
+        position: static;
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .informacion {
+        width: 100%;
+        margin-left: 0;
+        padding: 30px 25px;
+    }
+
+    .encabezado h1 {
+        font-size: 30px;
+    }
+
+    .profesion {
+        font-size: 17px;
+    }
+
+    .foto img {
+        width: 150px;
+        height: 150px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
