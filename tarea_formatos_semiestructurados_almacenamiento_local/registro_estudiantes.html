@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Estudiantes</title>
+    <link rel="stylesheet" href="registro_estudiantes.css">
+</head>
+
+<body>
+    <main>
+    <section class="registro">
+        <form id="formulario_registro">
+            <h1>Registre sus datos</h1>
+            <label for="cedula">Cédula*</label>
+            <input type="text"
+                   id="cedula"
+                   placeholder="Ingrese su número de cédula"
+                   maxlength="10"
+                   required>
+            <p id="error_cedula"></p>
+
+            <label for="apellidos">Apellidos*</label>
+            <input type="text"
+                   id="apellidos"
+                   placeholder="Dos apellidos"
+                   maxlength="50"
+                   required>
+            <p id="error_apellidos"></p>
+                    
+            <label for="nombres">Nombres*</label>
+            <input type="text"
+                   id="nombres"
+                   placeholder="Dos nombres"
+                   maxlength="50"
+                   required>
+            <p id="error_nombres"></p>
+                    
+            <label for="direccion">Dirección*</label>
+            <input type="text"
+                   id="direccion"
+                   placeholder="Ingrese su dirección"
+                   maxlength="50"
+                   required>
+            <p id="error_direccion"></p>
+                
+            <label for="telefono">Teléfono*</label>
+            <input type="tel"
+                   id="telefono"
+                   placeholder="Máx. 10 dígitos"
+                   maxlength="10"
+                   required>
+            <p id="error_telefono"></p>
+                    
+            <label for="correo">Correo*</label>
+            <input type="email"
+                   id="correo"
+                   placeholder="Ingrese su correo"
+                   maxlength="50"
+                   required>
+            <p id="error_correo"></p>
+                    
+            <label for="facultad">Facultad*</label>
+            <select id="facultad" required>
+                <option
+                    value=""
+                    selected disabled>
+                    Seleccione una facultad
+                </option>
+                <option
+                    value="Ciencias de la Salud">
+                           Ciencias de la Salud
+                </option>
+                <option
+                    value="Ingeniería, Industria y Arquitectura">
+                           Ingeniería, Industria y Arquitectura
+                </option>
+                <option
+                    value="Ciencias de la Vida y Tecnologías">
+                           Ciencias de la Vida y Tecnologías
+                </option>
+                <option
+                    value="Educación, Turismo, Artes y Humanidades">
+                           Educación, Turismo, Artes y Humanidades
+                </option>
+                <option
+                    value="Ciencias Administrativas, Contables y Comercio">
+                           Ciencias Administrativas, Contables y Comercio
+                    </option>
+                <option
+                    value="Ciencias Sociales, Derecho y Bienestar">
+                           Ciencias Sociales, Derecho y Bienestar
+                </option>
+            </select>
+            <p id="error_facultad"></p>
+
+            <label for="nivel">Nivel*</label>
+            <select id="nivel" required>
+                <option value="" selected disabled>Seleccione un nivel</option>
+                <option value="Primer nivel">Primer nivel</option>
+                <option value="Segundo nivel">Segundo nivel</option>
+                <option value="Tercer nivel">Tercer nivel</option>
+                <option value="Cuarto nivel">Cuarto nivel</option>
+                <option value="Quinto nivel">Quinto nivel</option>
+                <option value="Sexto nivel">Sexto nivel</option>
+                <option value="Séptimo nivel">Séptimo nivel</option>
+                <option value="Octavo nivel">Octavo nivel</option>
+                <option value="Noveno nivel">Noveno nivel</option>
+                <option value="Décimo nivel">Décimo nivel</option>
+            </select>
+            <p id="error_nivel"></p>
+                    
+            <label for="paralelo">Paralelo*</label>
+            <select id="paralelo" required>
+                <option value="" selected disabled>Seleccione un paralelo</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+            </select>
+            <p id="error_paralelo"></p>
+
+            <input type="submit" class="btn-registrar" value="Registrar">
+        </form>
+    </section>
+
+    <aside class="informacion">
+        <div>
+            <h1>Registro de Estudiantes</h1>
+            <p>Ingrese sus datos para completar el proceso</p>
+            <p>Validaciones con JavaScript</p>
+            <p>Almacenamiento local con Local Storage y JSON</p>
+        </div>
+    </aside>
+    </main>
+    <script src="registro_estudiantes.js"></script>
+</body>
+</html>
