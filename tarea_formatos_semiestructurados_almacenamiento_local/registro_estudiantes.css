@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:rgb(126, 2, 19);
+}
+
+main {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.registro {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.registro p {
+    color:yellow;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 600px;
+    padding: 25px;
+}
+
+label, h2 {
+    font-size: 1.25rem;
+    color: white;
+}
+
+h1 {
+    font-size: 2rem;
+    color: white;
+}
+
+input, select {
+    background-color: beige;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.25rem;
+}
+
+input::placeholder {
+    color: black;
+}
+
+.btn-registrar {
+    background-color: #f2f4f6;
+    color: rgb(126, 2, 19);
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-registrar:hover {
+    background-color: rgb(220, 220, 200);
+}
+
+.informacion {
+    width: 50%;
+    min-height: 100vh;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.informacion h1 {
+    color: rgb(126, 2, 19);
+    margin-bottom: 25px;
+}
+
+.informacion p {
+    font-size: 1.25rem;
+}
+
+.informacion div {
+    position: fixed;
+    top: 40%;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .registro, .informacion {
+        width: 100%;
+    }
+
+    .informacion {
+        min-height: 250px;
+    }
+
+    .informacion div {
+        position: static;
+    }
+}
