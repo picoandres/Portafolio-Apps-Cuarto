@@ -1,0 +1,107 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  background: #f1f5f9;
+}
+
+/* Contenedor principal */
+.pagina {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+/* Caja del formulario */
+.caja {
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+h1 {
+  text-align: center;
+  color: #0d9488;
+  margin-top: 0;
+}
+
+/* Campos de entrada */
+input,
+select {
+  display: block;
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* Botones principales */
+button {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  background: #0d9488;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0f766e;
+}
+
+/* Mensajes de error */
+.error {
+  color: #dc2626;
+}
+
+/* Lista de pacientes */
+ul {
+  padding-left: 1.2rem;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 0;
+}
+
+/* Botones de acciones */
+.acciones {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.mini {
+  width: auto;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.8rem;
+}
+
+/* Botón eliminar */
+.rojo {
+  background: #dc2626;
+}
+
+.rojo:hover {
+  background: #b91c1c;
+}
+
+/* Botón cancelar */
+.cancelar {
+  background: #64748b;
+  margin-top: 0.5rem;
+}
+
+.cancelar:hover {
+  background: #475569;
+}
